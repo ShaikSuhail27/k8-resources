@@ -6,6 +6,6 @@ spec:
  containers:
   - name: nginx
     image: nginx
-  - name: almalinux
+  - name: sidecar
     image: almalinux:8
     command: ["sleep", "200"]
