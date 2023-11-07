@@ -1,0 +1,11 @@
+# pods are the smallest deployable units in 
+apiVersion: v1
+kind: Pod
+metadata:
+  namespace: roboshop
+spec:
+  containers:
+  - name: nginx
+    image: nginx:1.14.2
+    ports:
+    - containerPort: 80
