@@ -4,5 +4,5 @@ metadata:
   name: config-map
 data:
   COURSE: DEVOPS
-  TRAINER: sivakumar
+  TRAINER: sivakumarreddy
   DURATION: 110 hrs
