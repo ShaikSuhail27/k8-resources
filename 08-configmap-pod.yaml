@@ -1,0 +1,21 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: config-map-pod
+  labels:
+    purpose: configuration of pod using config map
+spec:
+  containers:
+  - name: envar-demo-container
+    image: nginx
+    env:
+    - name: COURSE
+      valueFrom: 
+        configMapKeyRef:
+          name: course-config           # The ConfigMap this value comes from.
+          key: COURSE
+    - name: PERSON
+      valueFrom: 
+        configMapKeyRef:
+          name: course-config           # The ConfigMap this value comes from.
+          key: TRAINER 
