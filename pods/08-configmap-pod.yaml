@@ -13,7 +13,7 @@ spec:
         valueFrom: 
           configMapKeyRef:
             name: config-map           # The ConfigMap this value comes from.
-             key: COURSE
+            key: COURSE
       - name: PERSON
         valueFrom: 
           configMapKeyRef:
