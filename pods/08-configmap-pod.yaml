@@ -1,12 +1,12 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: configpod
+  name: config-pod
   labels:
     purpose: configuration
 spec:
   containers:
-  - name: envar-demo-container
+  - name: config-pod
     image: nginx
     env:
     - name: COURSE
