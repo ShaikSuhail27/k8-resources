@@ -6,16 +6,16 @@ metadata:
     purpose: configuration
 spec:
   containers:
-  - name: config-pod
-    image: nginx
-    env:
-    - name: COURSE
-      valueFrom: 
-        configMapKeyRef:
-          name: course-config           # The ConfigMap this value comes from.
-          key: COURSE
-    - name: PERSON
-      valueFrom: 
-        configMapKeyRef:
-          name: course-config           # The ConfigMap this value comes from.
-          key: TRAINER 
+    - name: config-pod
+      image: nginx
+      env:
+      - name: COURSE
+        valueFrom: 
+          configMapKeyRef:
+            name: course-config           # The ConfigMap this value comes from.
+             key: COURSE
+      - name: PERSON
+        valueFrom: 
+          configMapKeyRef:
+            name: course-config           # The ConfigMap this value comes from.
+            key: TRAINER 
