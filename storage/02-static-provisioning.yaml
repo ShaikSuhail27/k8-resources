@@ -3,7 +3,7 @@ kind: PersistentVolume
 metadata:
   name: ebs-static
 spec:
-  storageClassName: ""
+  storageClassName: " "
   accessModes:
   - ReadWriteOnce
   awsElasticBlockStore:
@@ -17,7 +17,7 @@ kind: PersistentVolumeClaim
 metadata:
   name: ebs-static-pvc
 spec:
-  storageClassName: ""
+  storageClassName: " "
   accessModes:
     - ReadWriteOnce
   resources:
