@@ -33,3 +33,15 @@ steps:
 
 Dynamic provisioning:
 1. here the storage class will create EBS volume and PV automatically
+
+EFS:
+1.it means elastic network storage and elastic file system
+2.EBS will not scale automatically, but EFS will scale automatically (if memory exceeds the limit)
+
+EFS static provisioning:
+steps:
+1. create EFS file system
+2. edit the security group to allow traffic
+3. install the EFS csi driver
+4. give access to ec2 to access efs
+5. create pv, pvc and mount to pod
