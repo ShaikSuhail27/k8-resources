@@ -43,5 +43,15 @@ steps:
 1. create EFS file system
 2. edit the security group to allow traffic
 3. install the EFS csi driver
+(kubectl kustomize \
+    "github.com/kubernetes-sigs/aws-efs-csi-driver/deploy/kubernetes/overlays/stable/ecr/?ref=release-1.X" > private-ecr-driver.yaml)
 4. give access to ec2 to access efs
 5. create pv, pvc and mount to pod
+
+EFS dynamic provisioning:
+steps:
+1. create EFS file system
+2. edit the security group to allow traffic
+3. install the EFS csi driver
+4. give access to ec2 to access efs
+5. create pvc and mount to pod
