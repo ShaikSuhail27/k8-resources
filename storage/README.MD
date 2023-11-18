@@ -29,3 +29,7 @@ steps:
 4. make sure EC2 can access EBS
 5. create PVC (persistent volume claim)
 6. need to create a volume and attach to the pod
+
+
+Dynamic provisioning:
+1. here the storage class will create EBS volume and PV automatically
